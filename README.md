@@ -63,7 +63,7 @@ Vous allez lancer l'application en utilisant les images docker que nous avons pu
       
    Récupérez le code source en clonant ce dépôt sur votre machine locale :
 ```bash
-git clone https://github.com/EL-K-Code/Projet-Conception-Logicielle-Bookit.git
+git clone https://github.com/Yatoute/Projet-Conception-Logicielle-Bookit.git
 cd Projet-Conception-Logicielle-Bookit
 ```
 
@@ -101,19 +101,19 @@ cp frontend/.env.template frontend/.env
 - [ ] Pull des images depuis Docker Hub
 
 ```bash
-docker pull richard0209/bookit-backend:latest
-docker pull richard0209/bookit-frontend:latest
+docker pull yatoute/bookit-backend:latest
+docker pull yatoute/bookit-frontend:latest
 ```
 
 - [ ] Exécuter l'application
   - backend
   ```bash
-  docker run --env-file backend/.env -p 8000:8000 richard0209/bookit-backend:latest
+  docker run --env-file backend/.env -p 8000:8000 yatoute/bookit-backend:latest
   ```
 
   - frontend
   ```bash
-  docker run -d -e NEXT_PUBLIC_API_URL=http://127.0.0.1:8000 -p 3000:3000 --name bookit-frontend richard0209/bookit-frontend:latest
+  docker run -d -e NEXT_PUBLIC_API_URL=http://127.0.0.1:8000 -p 3000:3000 --name bookit-frontend yatoute/bookit-frontend:latest
   ```
   
 - [ ] Accéder à l'application :
